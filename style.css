@@ -1,7 +1,13 @@
+@font-face {
+    src: url(fonts/VCR.ttf);
+    font-family: VCR;
+}
+
+
 * {
     position: relative;
     margin: 0;
-    background-color: #9badb7;
+    background-color: #EFEFF4    ;
     
 }
 
@@ -12,9 +18,11 @@
 
 #title {
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    font-family: VCR;
     font-size: 50px;
     margin-bottom: 50px;
+    margin-top: 15px;
+    letter-spacing: 0;
     color: black;
 }
 
@@ -30,14 +38,15 @@
 canvas {
     border: 5px black solid;
     border-radius: 10px;
-    background-color: #001031;
+    background-color: #8E88BC;
 }
     
 #pi {
     text-align: center;
-    font-family: 'PT Sans', sans-serif;
+    font-family: VCR;
     font-size: 50px;
     margin-bottom: 50px;
+    margin-top: 20px;
     color: black;
 }
 
@@ -46,18 +55,32 @@ canvas {
     margin-right: auto;
     width: 100%;
     font-size: 25px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     font-family: 'PT Sans', sans-serif;
 }
 
 #info {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 25px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 15px;
     width: 1000px;
-    border-top: gray solid 5px;
+    border-top: #BAA3AB solid 5px;
     
+}
+
+.infoLink {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    font-size: 35px;
 }
 
 button{
@@ -67,8 +90,8 @@ button{
     font-size: 50px;
     font-family: 'Roboto Slab', serif;
     background: none;
-    background-color: white;
-    border: 2px solid #001031;
+    background-color: #D3A49C;
+    border: 2px solid black;
     border-radius: 20px;
     cursor: pointer;
 
@@ -80,13 +103,13 @@ button{
     z-index: 0;
 }
 
-button:hover{
+/* button:hover{
     color: white;
-}
+} */
 
 button::before{
     content: "";
-    background-color: #001031;
+    background-color: #9B6F6A;
     position: absolute;
     
     top: 50%;

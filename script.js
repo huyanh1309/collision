@@ -25,8 +25,8 @@ inputValue.addEventListener('change', function() {
 	m2 = Math.pow(100, digit - 1);
 	timeStep = Math.pow(10, digit - 1);
 
-	block1 = new Block(200, 250, 50, 0, 1);
-	block2 = new Block(400, 150, 150, -2 / timeStep, m2);
+	block1 = new Block(200, 249, 50, 0, 1);
+	block2 = new Block(400, 149, 150, -2 / timeStep, m2);
 });
 
 
