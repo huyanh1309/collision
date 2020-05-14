@@ -40,12 +40,12 @@ function list() {
 }
 
 function playAudio() {
-	sound.volume = 0.1;
+	sound.volume = 0.01;
 	sound.play();
 }
 
 function pauseAudio() {
-	sound.volume = 0.1;
+	sound.volume = 0.01;
 	sound.pause();
 }
 
